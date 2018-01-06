@@ -10,7 +10,7 @@ def getAnniversary():
         mydate = datetime.datetime.now()
         # %B is the String representation of a moth
         # %d is the two-digit number of day of the month
-        monthAndDay = mydate.strftime("%B " + "%d")
+        monthAndDay = mydate.strftime("%B " + "%-d")
 
 
     return data[monthAndDay]
