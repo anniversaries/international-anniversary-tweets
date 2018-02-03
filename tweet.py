@@ -9,10 +9,10 @@ def getApi(config):
 def main():
 
   config = {}
-  execfile("config.py", config)
+  execfile("actual_config.py", config)
   api = getApi(config)
 
-  tweet = "#today : " + helper.getAnniversary()
+  tweet = "Today we celebrate: " + helper.getAnniversary() + ". #today #world #anniversary"
   status = api.update_status(status=tweet)
   # Yes, tweet is called 'status' rather confusing
 
