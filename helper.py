@@ -13,4 +13,4 @@ def getAnniversary():
         monthAndDay = mydate.strftime("%B " + "%-d")
 
 
-    return data[monthAndDay]
+    return data[monthAndDay] if data.get(monthAndDay) != None else "Nothing special today 😉"
